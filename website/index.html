@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NeuroPath — Sistema de Acompañamiento Educativo Inteligente</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              neuroDark: '#070b14',
+              neuroCard: '#0f172a',
+              neuroCyan: '#06b6d4',
+              neuroBlue: '#3b82f6',
+              neuroBorder: '#1e293b',
+            },
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #070b14;
+      }
+      .font-display {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+      .glow-radial {
+        background: radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.15) 0%, rgba(0,0,0,0) 70%);
+      }
+    </style>
+  </head>
+  <body class="text-slate-200 antialiased selection:bg-neuroCyan/30 selection:text-white relative overflow-x-hidden">
+    
+    <!-- Background Accents -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] glow-radial pointer-events-none z-0"></div>
+    <div class="absolute top-[1200px] right-0 w-[500px] h-[500px] glow-radial pointer-events-none z-0 opacity-60"></div>
+
+    <!-- Header Navigation -->
+    <header class="border-b border-neuroBorder/60 bg-neuroDark/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl border border-neuroCyan flex items-center justify-center bg-neuroCyan/5 shadow-[0_0_15px_rgba(6,182,212,0.15)]">
+            <svg class="w-5 h-5 text-neuroCyan" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12M12 9c1.5 0 2.5 1 2.5 2.5S13.5 14 12 14"/>
+            </svg>
+          </div>
+          <div>
+            <span class="text-xl font-bold tracking-tight text-white block font-display">NeuroPath</span>
+            <span class="text-[10px] tracking-widest text-neuroBlue font-bold uppercase block -mt-1">By NeuroNova Global</span>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-6">
+          <a href="#problema" class="text-sm text-slate-400 hover:text-white transition-colors">El Problema</a>
+          <a href="#funciones" class="text-sm text-slate-400 hover:text-white transition-colors">Qué Hace</a>
+          <a href="#beneficios" class="text-sm text-slate-400 hover:text-white transition-colors">Beneficios</a>
+          <a href="#piloto" class="text-sm text-slate-400 hover:text-white transition-colors">Piloto Comercial</a>
+        </div>
+        <div>
+          <a href="mailto:castellanosanalisis@gmail.com?subject=Agendar%20Demo%20NeuroPath" class="inline-flex items-center justify-center px-4 py-2 text-xs font-bold tracking-wider text-neuroDark bg-neuroCyan rounded-lg hover:bg-white transition-all duration-300 uppercase shadow-[0_4px_14px_rgba(6,182,212,0.3)] hover:scale-105">
+            Agendar Demo
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO PRINCIPAL -->
+    <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+      <div class="grid grid-columns-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-neuroCyan/30 bg-neuroCyan/10 text-neuroCyan text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-neuroCyan animate-ping"></span>
+            Programa piloto disponible para instituciones educativas
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] font-display">
+            Detecta señales tempranas de <span class="bg-gradient-to-r from-neuroCyan to-neuroBlue bg-clip-text text-transparent">agotamiento y pérdida de foco</span> en estudiantes.
+          </h1>
+          <p class="text-lg text-slate-400 max-w-xl">
+            NeuroPath es una plataforma de IA educativa diseñada para ayudar a instituciones a mejorar el acompañamiento estudiantil, visualizar alertas tempranas y apoyar estudiantes neurodivergentes.
+          </p>
+          <div class="pt-2 space-y-4">
+            <div class="flex flex-wrap gap-4">
+              <a href="mailto:castellanosanalisis@gmail.com?subject=Agendar%20Demo%20NeuroPath" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-bold text-neuroDark bg-gradient-to-r from-neuroCyan to-neuroBlue rounded-xl hover:opacity-90 transition-all duration-300 shadow-lg shadow-neuroCyan/20 hover:-translate-y-0.5">
+                Agendar demo institucional
+              </a>
+              <a href="#piloto" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-bold text-white bg-slate-900 border border-neuroBorder rounded-xl hover:bg-slate-800 transition-all duration-300">
+                Solicitar acceso
+              </a>
+            </div>
+            <p class="text-xs font-medium text-amber-400 flex items-center gap-1.5">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
+              Urgencia: Estamos abriendo solo 3 pilotos institucionales este mes.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Live Preview Panel Mockup -->
+        <div class="lg:col-span-5">
+          <div class="bg-neuroCard border border-neuroBorder rounded-2xl p-6 shadow-2xl shadow-black/80 relative overflow-hidden group">
+            <div class="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-neuroCyan/40 to-transparent"></div>
+            <div class="flex items-center justify-between pb-4 border-b border-neuroBorder/60 mb-6">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-red-500/80 block"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-500/80 block"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500/80 block"></span>
+              </div>
+              <span class="text-xs text-slate-500 font-mono font-medium">NeuroPath Core V1.0</span>
+            </div>
+            <div class="space-y-4">
+              <div class="p-4 rounded-xl border border-neuroBorder bg-neuroDark/40">
+                <div class="flex justify-between items-center mb-1">
+                  <span class="text-sm text-slate-400">Estudiantes Activos</span>
+                  <span class="text-xl font-bold text-white font-display">3</span>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl border border-neuroCyan/20 bg-neuroCyan/5">
+                <div class="flex justify-between items-center mb-1">
+                  <span class="text-sm text-neuroCyan font-semibold">Alertas Accionables</span>
+                  <span class="text-xl font-bold text-neuroCyan font-display shadow-sm">2 Activas</span>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl border border-neuroBorder bg-neuroDark/40">
+                <div class="flex justify-between items-center mb-1">
+                  <span class="text-sm text-slate-400">Foco Promedio de Aula</span>
+                  <span class="text-xl font-bold text-neuroBlue font-display">64%</span>
+                </div>
+                <div class="w-full bg-neuroDark h-2 rounded-full mt-2 overflow-hidden">
+                  <div class="bg-gradient-to-r from-neuroCyan to-neuroBlue h-full rounded-full" style="width: 64%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: EL PROBLEMA -->
+    <section id="problema" class="py-20 border-t border-neuroBorder/40 bg-slate-950/40 relative z-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <h2 class="text-xs font-bold tracking-widest text-neuroBlue uppercase">La Situación Actual</h2>
+        <p class="text-3xl sm:text-4xl font-bold text-white font-display">
+          Los equipos educativos están reaccionando demasiado tarde.
+        </p>
+        <p class="text-slate-400 text-lg max-w-2xl mx-auto pt-2 leading-relaxed">
+          Docentes y coordinadores enfrentan cada vez más dificultades para identificar señales tempranas de fatiga, desconexión académica y sobrecarga cognitiva en el día a día.
+        </p>
+        <div class="pt-6">
+          <div class="p-6 rounded-2xl bg-neuroCard border border-neuroBorder inline-flex text-left max-w-2xl gap-4 items-start shadow-md">
+            <div class="p-2.5 bg-neuroCyan/10 rounded-xl text-neuroCyan shrink-0">💡</div>
+            <p class="text-sm text-slate-300">
+              <strong class="text-white font-semibold">Nuestra solución:</strong> NeuroPath ayuda a visualizar patrones de atención, foco y bienestar estudiantil para facilitar intervenciones más tempranas y un mejor acompañamiento personalizado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: QUÉ HACE NEUROPATH -->
+    <section id="funciones" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center space-y-3 mb-16">
+        <h2 class="text-xs font-bold tracking-widest text-neuroCyan uppercase">Ecosistema Integrado</h2>
+        <p class="text-3xl sm:text-4xl font-bold text-white font-display">¿Qué hace NeuroPath por tu comunidad?</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Para Estudiantes -->
+        <div class="bg-neuroCard border border-neuroBorder rounded-2xl p-8 hover:border-neuroCyan/40 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="text-3xl">🧠</div>
+            <h3 class="text-xl font-bold text-white font-display">Para estudiantes</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Visualiza energía, foco y carga cognitiva con recomendaciones simples y apoyo educativo continuo.
+            </p>
+          </div>
+        </div>
+        <!-- Para Docentes -->
+        <div class="bg-neuroCard border border-neuroBorder rounded-2xl p-8 hover:border-neuroCyan/40 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="text-3xl">👩‍🏫</div>
+            <h3 class="text-xl font-bold text-white font-display">Para docentes</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Recibe alertas claras y accionables sin aumentar la carga operativa del aula ni interrumpir la rutina pedagógica.
+            </p>
+          </div>
+        </div>
+        <!-- Para Instituciones -->
+        <div class="bg-neuroCard border border-neuroBorder rounded-2xl p-8 hover:border-neuroCyan/40 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="text-3xl">🏫</div>
+            <h3 class="text-xl font-bold text-white font-display">Para instituciones</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Obtén métricas agregadas para fortalecer programas de bienestar, inclusión educativa y retención estudiantil.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: BENEFICIOS -->
+    <section id="beneficios" class="py-20 border-t border-neuroBorder/40 bg-slate-950/20 relative z-10">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-5 space-y-4">
+            <h2 class="text-xs font-bold tracking-widest text-neuroBlue uppercase">Impacto Educativo</h2>
+            <p class="text-3xl font-bold text-white font-display">NeuroPath te ayuda de forma integral</p>
+            <p class="text-sm text-slate-400">
+              Transformamos datos invisibles en flujos de trabajo claros para que todo tu equipo colabore en pro del bienestar estudiantil.
+            </p>
+          </div>
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl border border-neuroBorder bg-neuroCard/50 flex items-start gap-3">
+              <span class="text-neuroCyan font-bold mt-0.5">✓</span>
+              <span class="text-sm text-slate-300 font-medium">Detectar señales tempranas de agotamiento.</span>
+            </div>
+            <div class="p-4 rounded-xl border border-neuroBorder bg-neuroCard/50 flex items-start gap-3">
+              <span class="text-neuroCyan font-bold mt-0.5">✓</span>
+              <span class="text-sm text-slate-300 font-medium">Mejorar el acompañamiento estudiantil.</span>
+            </div>
+            <div class="p-4 rounded-xl border border-neuroBorder bg-neuroCard/50 flex items-start gap-3">
+              <span class="text-neuroCyan font-bold mt-0.5">✓</span>
+              <span class="text-sm text-slate-300 font-medium">Apoyar contextos de neurodivergencia.</span>
+            </div>
+            <div class="p-4 rounded-xl border border-neuroBorder bg-neuroCard/50 flex items-start gap-3">
+              <span class="text-neuroCyan font-bold mt-0.5">✓</span>
+              <span class="text-sm text-slate-300 font-medium">Facilitar intervenciones educativas tempranas.</span>
+            </div>
+            <div class="p-4 rounded-xl border border-neuroBorder bg-neuroCard/50 flex items-start gap-3">
+              <span class="text-neuroCyan font-bold mt-0.5">✓</span>
+              <span class="text-sm text-slate-300 font-medium">Generar conversaciones más claras entre docentes y familias.</span>
+            </div>
+            <div class="p-4 rounded-xl border border-neuroBorder bg-neuroCard/50 flex items-start gap-3">
+              <span class="text-neuroCyan font-bold mt-0.5">✓</span>
+              <span class="text-sm text-slate-300 font-medium">Fortalecer iniciativas de bienestar estudiantil.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: IMPLEMENTACIÓN PILOTO -->
+    <section id="piloto" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="bg-gradient-to-br from-neuroCard to-neuroDark border border-neuroCyan/30 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-72 h-72 bg-neuroCyan/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div class="lg:col-span-7 space-y-6">
+            <div class="space-y-2">
+              <h2 class="text-xs font-bold tracking-widest text-neuroCyan uppercase">Inversión de Lanzamiento</h2>
+              <h3 class="text-3xl sm:text-4xl font-bold text-white font-display">Implementación rápida para instituciones educativas</h3>
+            </div>
+            <p class="text-slate-400 text-sm">El acceso al programa piloto incluye un set completo de herramientas y soporte dedicado:</p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-300">
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-neuroCyan rounded-full"></span> Demo personalizada.
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-neuroCyan rounded-full"></span> Configuración inicial.
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-neuroCyan rounded-full"></span> Dashboard de alertas.
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-neuroCyan rounded-full"></span> Sesión de onboarding.
+              </li>
+              <li class="flex items-center gap-2.5 sm:col-span-2">
+                <span class="w-1.5 h-1.5 bg-neuroCyan rounded-full"></span> Revisión de resultados y feedback consultivo.
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-5 bg-neuroDark/80 border border-neuroBorder p-8 rounded-2xl text-center space-y-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Inversión Inicial Sugerida</span>
+            <div class="text-4xl sm:text-5xl font-extrabold text-white font-display">US$500–1,500</div>
+            <p class="text-xs text-slate-400 leading-normal">
+              Dependiendo del alcance institucional y nivel de acompañamiento técnico/pedagógico requerido.
+            </p>
+            <div class="pt-2">
+              <a href="mailto:castellanosanalisis@gmail.com?subject=Solicitud%20de%20Piloto%20NeuroPath" class="w-full inline-flex items-center justify-center px-5 py-3 text-xs font-bold text-neuroDark bg-neuroCyan rounded-xl hover:bg-white transition-colors uppercase tracking-wider">
+                Solicitar Acceso Piloto
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: CONFIANZA -->
+    <section class="py-12 border-y border-neuroBorder/40 bg-slate-950/60 relative z-10">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
+        <h3 class="text-xs font-bold tracking-widest text-amber-500 uppercase flex items-center justify-center gap-1.5">
+          🛡️ Diseñado para apoyo educativo responsable
+        </h3>
+        <p class="text-sm text-slate-400 leading-relaxed max-w-2xl mx-auto">
+          NeuroPath no reemplaza profesionales ni realiza diagnósticos médicos. La plataforma está diseñada como apoyo educativo para mejorar la visibilidad, el acompañamiento continuo y la detección temprana dentro de las instituciones educativas.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN FINAL (CTA) -->
+    <section class="py-20 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
+      <div class="space-y-3">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white font-display">¿Quieres conocer NeuroPath?</h2>
+        <p class="text-slate-400 text-base max-w-xl mx-auto">
+          Estamos abriendo conversaciones exclusivas con:
+        </p>
+      </div>
+      
+      <!-- Target tags -->
+      <div class="flex flex-wrap justify-center gap-2.5 max-w-2xl mx-auto">
+        <span class="px-4 py-2 rounded-xl bg-neuroCard border border-neuroBorder text-xs text-slate-300 font-medium">Colegios privados</span>
+        <span class="px-4 py-2 rounded-xl bg-neuroCard border border-neuroBorder text-xs text-slate-300 font-medium">Universidades</span>
+        <span class="px-4 py-2 rounded-xl bg-neuroCard border border-neuroBorder text-xs text-slate-300 font-medium">Centros de apoyo educativo</span>
+        <span class="px-4 py-2 rounded-xl bg-neuroCard border border-neuroBorder text-xs text-slate-300 font-medium">Programas de inclusión</span>
+        <span class="px-4 py-2 rounded-xl bg-neuroCard border border-neuroBorder text-xs text-slate-300 font-medium">Organizaciones EdTech</span>
+      </div>
+
+      <div class="pt-4">
+        <a href="mailto:castellanosanalisis@gmail.com?subject=Agendar%20Demo%20Institucional%20NeuroPath" class="inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-neuroDark bg-gradient-to-r from-neuroCyan to-neuroBlue rounded-xl hover:opacity-90 transition-all duration-300 shadow-xl shadow-neuroCyan/20 hover:-translate-y-0.5">
+          Agendar demo institucional
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#04060c] border-t border-neuroBorder/60 py-12 text-center text-xs text-slate-500 space-y-2 relative z-10">
+      <p class="font-display font-bold text-slate-400 text-sm tracking-wide">NeuroPath — NEURONOVA GLOBAL</p>
+      <p>Contacto Directo: <a href="mailto:castellanosanalisis@gmail.com" class="text-neuroCyan hover:underline">castellanosanalisis@gmail.com</a></p>
+      <p class="pt-4 text-slate-600">&copy; 2026 NeuroNova Global. Todos los derechos reservados.</p>
+    </footer>
+
+  </body>
+</html>
